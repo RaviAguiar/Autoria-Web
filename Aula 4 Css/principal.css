@@ -1,0 +1,22 @@
+body{
+    /* body = representa o seletor, é a marcação que será formatada */
+    background-color: rgb(76, 0, 255);
+    background-color: aliceblue;
+    background-color:rgb(21, 211, 30);
+    /* o último atributo é que ficara, é uma cascata. */
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Comentário explicando font family
+    O font family disponibiliza ao site opções de fontes da mesma 
+    família para serem carregadas. caso o usuário não possua a fonte
+    prioritária no computador, a próxima será carregada  */
+
+    h1{
+        color:whitesmoke;
+        text-align: center;
+    }
+    h2{
+        background-color: rgb(49, 165, 14);
+        color:aliceblue
+    }
+}
