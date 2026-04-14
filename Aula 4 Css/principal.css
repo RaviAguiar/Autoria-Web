@@ -19,4 +19,10 @@ body{
         background-color: rgb(49, 165, 14);
         color:aliceblue
     }
+    li{
+        background-color: rgb(255, 9, 9);
+        list-style-type: disc;
+        /* esse atributo é SOMENTE para os seletores OL, UL e LI */
+        list-style-position: outside;
+    }
 }
