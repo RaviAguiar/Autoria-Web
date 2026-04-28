@@ -1,0 +1,15 @@
+body {  /* SELETOR */
+    background-color: rgb(61, 123, 236);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+li{
+    list-style-image: url(Star\ 1\ \(2\).png);
+}
+
+.imagem{
+    text-align: center;
+}
