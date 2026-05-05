@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(252, 237, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    /* múmero inteiro+unidade, a unidade pode ser px, em, rem, % ... rem é mais reponsível */
+    font-size: 1rem; 
+}
+
+li{
+    display: inline-block;
+    margin: 0 1rem;
+    /* Quando tem 2 valores: o 10 valor é top e bottom
+    o 2o valor é direita e esquerda
+    */
+
+    /* o comportamento do li é 'block'  o comportamente do a (âncora) é 'inline' */
+}
+
+li a{
+    background-color: black;
+    color:white;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+a:hover{
+    /* hover é uma subclasse do css
+    efeito de passar o mouse
+    */
+    color:blueviolet
+}
