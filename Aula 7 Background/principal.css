@@ -1,0 +1,34 @@
+a:hover{ 
+    background-color: rgb(255, 0, 0);
+}
+
+body{
+    background-image: url(bg-marca.png);
+    /* posso aplicar backgournd image em QUALQUER MARCAÇÃO! */
+    background-repeat: repeat-y;
+    /* repetição: x ou y (horizontal ou vertical) */
+    background-position: right; 
+    /* posição da imagem de plano de fundo: left, right, center ou um */
+
+    /* 
+        uma imagem de background será SEMPRE DECORATIVA,
+        insto é. não será INFORMACIONAL,
+        para imagens informacionais, é necessário a marcação de IMG
+    */
+    margin:0
+}
+
+h1{
+    margin:0; /*ESPAÇAMENTO EXTERNO*/
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover ; /* cuidado pq usando % vc pode distorcer a imagem */
+    text-align: center;
+    padding:5rem;
+}
+
+h1 a{
+/* formata o âncora que está dentro do h1 */
+    color: white;
+    text-decoration: none;
+}
