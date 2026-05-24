@@ -14,7 +14,7 @@ h1{
     color:white;
     text-align: center;
     font-size: 70px;
-    background-image: url(background.png);
+    background-image: url(../assets/imgs/background.png);
     border-radius: 15px;
     background-repeat: no-repeat;
     background-size: cover ;
@@ -118,4 +118,27 @@ a:hover{
 
 #ins{
     transform-origin: right;
+}
+
+.conteinermain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:100px;
+    padding: 10px;
+}
+
+.cardsp{
+    text-align: center;
+}
+
+.fotos{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.cardsp h2{
+    color: rgb(129, 219, 235);
+    font-size: ;
 }
