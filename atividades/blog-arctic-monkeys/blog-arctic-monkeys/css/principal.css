@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(160, 160, 132);
+    border: 0.5rem, solid, white, ;
+    border-radius: 1rem;
+}
+
+@font-face{
+    font-family: 'the-car-font';   
+    src: url(../assets/fonts/Mortend\ Bold.otf) format(opentype);
+    src: url(../assets/fonts/Mortend\ Bold.ttf) format(truetype);
+}
+
+.card-inicial{
+    background-image: url(../assets/imgs/background.webp);
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-size: 3rem;
+    color: white;
+    font-family:'the-car-font', 'serif';
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-horizontal ul{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    gap: 2rem;
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+a{
+    display: inline-block;
+    color:inherit;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+    color:orangered;
+}
