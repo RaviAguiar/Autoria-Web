@@ -1,0 +1,20 @@
+body{
+    color: brown;
+    background-color: antiquewhite;
+}
+
+header, footer{
+    text-align: center;
+}
+
+header nav li{ /* espaço representa especificado */
+    display: inline-block;
+    padding: 1rem;
+}
+
+main{
+    padding:2rem;
+    max-width: 70rem; /* largura máxima - responsividade! */
+    margin: 0 auto;
+    background-color: rgb(248, 223, 190);
+}
