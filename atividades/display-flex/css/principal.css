@@ -1,0 +1,84 @@
+body{
+    background-image: url(../assets/bg.png);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color:white;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 3.5rem;
+}
+h1 a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+h1 a:hover{
+    color:midnightblue;
+    transform: scale(1.2);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.67);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color:white;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+    margin:0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+.links-menu{
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color:inherit;
+    text-decoration: none;
+}
+.links-menu:hover{
+    transform: scale(1.2);
+    color: lightblue;
+}
+
+main{
+    background-color: white;
+    padding: 1.5rem;
+}
+
+article h2{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    text-align: center;
+}
+article p{;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boxes{
+    display: flex;
+}
