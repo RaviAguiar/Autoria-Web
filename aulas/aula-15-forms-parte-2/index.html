@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid black;
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 20rem;
+        }
+        label[for]{
+            /* selecionar apenas as labells que tem o 'for' definido,
+            isto é, as label's usadas com o input 'radio' não serão
+            diagramadas porque não precisam */
+            display: inline-block;
+            width: 7rem;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <p>Teremos Javascript na disciplina. Quem perguntar
+        quando perderá um ponto. <br> Alunos com menos um ponto:
+    </p>
+    <ol>
+        <li>
+            Victor Carvalho
+        </li>
+        <h1>FORMULÁRIOS</h1>
+
+        <h2>CONTATO</h2>
+        <form action="">
+            <label for="nome">Nome: </label>
+            <input type:text id="nome" value="Victor Carvalho" required placeholder="Digite seu nome"> <br>
+            <!--
+            'placeholder' é um rótulo dentro do input
+            'disable' (comando, por que não tem valor) desativa o componente 
+            'required ' que torna obrigatorio o campo
+            'value' é um atributo importante para a função de edição de dados, 
+            por exemplo quando vamos atualizar os dados de cadastro
+             -->
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email"> <br>
+
+            <label for="motivo">Motivo:</label>
+            <select id="motivo">
+                <option value="reclamacao">Reclamação</option>
+                <option value="elogio">Elogio</option>
+                <option value="sugestao">Sugestão</option>
+            </select>
+            <!-- 
+            COMBOBOX
+            Componente que permite juntar vários itens em um espaço pequeno
+            porém, os usuaários precisam clicar 2 vezes pra selecionar
+            por isso é usado para um grupo de itens muito similares 
+            como lista de estados, meses, anos, dias do mês......
+             -->
+
+            <label for="mensagem">Mensagem: : </label>
+            <textarea id="mensagem">O 'value' do textarea é dentro da marcação!</textarea> <br>
+            <!-- 
+            textarea é uma marcação que recebe um texto longo
+            -->
+            <input type="submit" value="ENVIAR">
+        </form>
+
+        <h2>BUSCA</h2>
+        <h2>ENQUETE</h2>
+        <p>Qual sua disciplina favorita</p>
+        <label><input type="radio" name="disc" value="autoria"> Autoria Web </label><br>
+        <label><input type="radio" name="disc" value="prog"> Programação </label><br>
+        <label><input type="radio" name="disc" value="filosofia"> Filosofia </label><br>
+        <label><input type="radio" name="disc" value=" design"> Design </label><br>
+        <!-- 
+        Os atributos nas marcações não precisam seguir ordem.
+        -->
+    </ol>
+</body>
+</html>
