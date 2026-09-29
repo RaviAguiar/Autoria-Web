@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to right, #A12FFD, #1DB5FD);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    gap:2rem;
+}
+
+header p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+
+#titulo{
+    color: white;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap:3rem;
+}
+
+li{
+    text-align: center;
+    min-width: 12rem;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    padding: 3rem;
+    background-color: rgb(7, 11, 20);
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+}
+
+section, aside{
+    background-color: rgb(9, 30, 64);
+    border-radius: 1rem;
+    display: flex;
+    padding:2.5rem;
+}
+
+section{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    max-width: 716px;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(68, 84, 110);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+#caixa-de-busca{
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+label{
+    padding-bottom: 1rem;
+}
+
+input{
+    background-color: rgb(69, 84, 110);
+    border: none;
+    min-height: 40px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+img{
+    min-width: 250px;
+}
+
+footer{
+    background-image: linear-gradient(to right, #A12FFD, #1DB5FD);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
