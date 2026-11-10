@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY GRID</title>
+    <style>
+        body>div{
+            border: 1px solid black;
+            max-width: 70rem; /* max-width é para responsividade */
+            margin: 0 auto; /* é possível centralizar com flex ou com width e margin auto... */
+            gap: 2rem;
+            padding: 2rem; /* espaçamento interno */
+            display: grid; /* display grid permite diagramação com cards mesclados verticalmente */
+            grid-template-areas: 
+            "a b c"
+            "a b d"
+            "e e e";
+
+            /* "." representa um espaço vazio */
+            /* as áreas não podem ficar distantes, nem em formato de "L" ou não aparecer*/
+
+            grid-template-columns: 1fr 2fr 1fr;
+            /* define a largura de cada coluna, recebe os valores de largura
+            das colunas, se forem definidas 3 colunas, devem ser definidps 3 calores... e assim sucessivamente.
+            unidade: rem, em, %, fr...
+            fr = fracionado
+            */
+            ;
+            grid-template-rows: 20rem 20rem 10rem; /* Define a altura das linhas */
+            /* CUIDADO com a definição de altura de linhas, porque se o conteúdo
+            ultrapassar os valores o texto ficará fora da área
+            */
+        }
+        div>div{
+            border: 1px solid gray;
+            padding: 2rem;
+            overflow: auto; /* barra de rolagem */
+        }
+        .palestras{grid-area: a;}
+        .palestrantes{grid-area: b;}
+        .minicursos{grid-area: c;}
+        .exposicoes{grid-area: d;}
+        .datas{grid-area: e;}
+    </style>
+</head>
+<body>
+    <!-- div>div*4>p>lorem -->
+    <div>
+        <div class="palestras">
+            <p>A Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi provident, necessitatibus delectus sapiente ipsum incidunt ex eum laborum quae impedit. Accusamus, ipsam necessitatibus. Possimus assumenda quo excepturi recusandae minus?</p>
+        </div>
+        <div class="palestrantes">
+            <p>B Tempore, quia pariatur! Hic voluptatum distinctio eveniet? Dolorem odit perspiciatis vitae pariatur dolores voluptatum numquam adipisci laboriosam deleniti possimus. Itaque, omnis ducimus? Praesentium debitis nisi deleniti unde similique necessitatibus tempore?</p>
+        </div>
+        <div class="minicursos">
+            <p>C Fuga eveniet neque temporibus, earum iure magni, commodi fugiat deserunt corporis optio repellat veritatis delectus quasi dolore iste. Aut repellat quasi explicabo sint excepturi dolor cupiditate? Doloribus labore soluta maiores.</p>
+        </div>
+        <div class=exposicoes>
+            <p>D Eos hic consectetur accusamus ducimus autem itaque voluptas consequuntur, quisquam perspiciatis blanditiis beatae totam. Magni exercitationem asperiores a velit! Nesciunt quibusdam mollitia vero deleniti vitae autem fugit libero explicabo? Distinctio.</p>
+        </div>
+        <div class=datas>
+            <p>E Eos hic consectetur accusamus ducimus autem itaque voluptas consequuntur, quisquam perspiciatis blanditiis beatae totam. Magni exercitationem asperiores a velit! Nesciunt quibusdam mollitia vero deleniti vitae autem fugit libero explicabo? Distinctio.</p>
+        </div>
+    </div>
+</body>
+</html>
