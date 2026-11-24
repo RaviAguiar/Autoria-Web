@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION ABSOLUTE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div.absolute{
+            background-color: rgb(66, 233, 32);
+            border: 2px solid rgb(255, 0, 0);
+            padding: 2rem;
+            width: 15rem;
+            height: 15rem;
+            position: absolute;
+            opacity: 0.8;
+            top: 100px;
+            left: 200px;
+            /* bottom: ;
+            right: ; */
+            /* 
+            position fixed - fica FIXO mesmo usando a barra de rolagem
+            position absolute - fica "preso" na área, isto é. vai com a barra de rolagem (tipo uma canvas layer do godot)
+            os elementos de coordenandas são top, left, bottom e right, só devem ser usados 2:
+            um para o eixo x e outro para o y -pode definir só um eixo
+            - o valor geralmente é em px porque as coordenadas são exatas
+            - os atributos de coordenadas só funcionam quando se trabalha com position: relative, fixed ou absolute
+            - os valores das coordenadas podem ser negativos
+            */
+        }
+
+        div.relative{
+            background-color: blueviolet;
+            position: relative;
+            padding: 2rem;
+            top: 10px;
+            /* 
+            o position relative geralmente é usado para que um elemento 'absolute' fique condicionado a ele
+            */
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100vw; /* unidade vw similar 100% vw = viewport width = largura do dispositivo */
+            padding: 2rem;
+            background-color: rgb(203, 0, 253);
+        }
+
+        div.absolute2{
+            background-color: aquamarine;
+            top: 150px;
+            left: 250px;
+            z-index: 2;
+        }
+        div.absolute3{
+            background-color: rgb(81, 203, 163);
+            top: 200px;
+            left: 300px;
+            z-index: 1;
+            /* 
+            o atributo z-idex representa o eixo z e recebe um número inteiro,
+            quanto maior o calor, mais pra frente o elemento ficará
+            não é obrigatório definir em todos os elementos com position
+            por padrão a ordem de exibição dos elementos segue a estrutura do html,
+            quanto mais para baixo, mais pra frente
+            */
+        }
+    </style>
+</head>
+<body>
+    <!-- o atributo de class pode colocar espaço porque representa vários valores -->
+    <div class="relative">
+        <div class="absolute">
+            <p>1- Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laudantium commodi nulla earum voluptas, itaque deleniti voluptatem soluta, maiores vitae vero magnam facilis molestias mollitia. Quae ducimus dignissimos porro dolore.</p>
+        </div>
+        <div class="absolute absolute2">
+            <p>2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laudantium commodi nulla earum voluptas, itaque deleniti voluptatem soluta, maiores vitae vero magnam facilis molestias mollitia. Quae ducimus dignissimos porro dolore.</p>
+        </div>
+        <div class="absolute absolute3">
+            <p>3- Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laudantium commodi nulla earum voluptas, itaque deleniti voluptatem soluta, maiores vitae vero magnam facilis molestias mollitia. Quae ducimus dignissimos porro dolore.</p>
+        </div>
+    </div>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <p>Dolorum consectetur laboriosam aliquam consequatur quod illo fuga provident? Asperiores quam architecto ipsam eveniet? Facilis, ducimus magnam, et, voluptates autem aspernatur magni rem minima molestias commodi recusandae odit cum nobis?</p>
+    <footer>
+        <p>Desenvolvido por IFRN.</p>
+    </footer>
+</body>
+</html>
